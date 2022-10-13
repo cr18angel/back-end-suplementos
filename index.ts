@@ -1,11 +1,22 @@
 import bodyParser from 'body-parser';
+import { application } from 'express';
 import mongoose from 'mongoose';
 import Server from './classes/server';
 import defaultRoutes from './routes/defaul.routes';
 import personajeRoutes from './routes/personajes.routes';
 
 
+// mi importacion 
+
+
+
+
+// miio 
+const cors = require('cors');
 const server = new Server();
+
+// mio
+server.app.use(cors())
 
 server.app.use(bodyParser.json());
 server.app.use(bodyParser.urlencoded({extended:true}));
