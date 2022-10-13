@@ -14,7 +14,7 @@ server.app.use(body_parser_1.default.urlencoded({ extended: true }));
 server.app.use('/', defaul_routes_1.default);
 //cambie nomber
 server.app.use('/suplementos', personajes_routes_1.default);
-mongoose_1.default.connect('mongodb+srv://usr_suplementos:<suplementos2022>@cluster0.ygbiyzd.mongodb.net/superProteinDb', (error) => {
+mongoose_1.default.connect('mongodb+srv://usr_suplementos:suplementos2022@cluster0.ygbiyzd.mongodb.net/superProteinDb', (error) => {
     if (error) {
         throw error;
     }

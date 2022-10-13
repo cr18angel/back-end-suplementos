@@ -17,7 +17,7 @@ server.app.use('/suplementos',personajeRoutes);
 
 
 
-mongoose.connect('mongodb+srv://usr_suplementos:<suplementos2022>@cluster0.ygbiyzd.mongodb.net/superProteinDb',(error)=>{
+mongoose.connect('mongodb+srv://usr_suplementos:suplementos2022@cluster0.ygbiyzd.mongodb.net/superProteinDb',(error)=>{
     if(error){
         throw error;
     }
